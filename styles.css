@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#fff ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    background-color: #d2d2d2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    max-width: 100%;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+
+button {
+    padding: 10px 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #bec0c2;
+}
+
+#main {
+    margin-top: 20px;
+    border-top: 2px solid #ddd;
+    padding-top: 10px;
+}
+
+#main h2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#main div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+#main div:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#totalWealth {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    button {
+        flex: 1;
+        margin: 5px;
+        text-align: center;
+    }
+}
